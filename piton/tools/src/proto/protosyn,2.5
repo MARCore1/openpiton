@@ -839,7 +839,7 @@ def main():
 
         print_info("Synthesizing a test: %s" % options.test_name)
         print_info("Compilation started")
-        ret_val = os.system('sims -sys=manycore' + config + ' -vcs_build -vcs_build_args=+libext+.v -vcs_build_args=-Mupdate > %s/compilation.log' % rc_dir.log)
+        ret_val = os.system('sims -sys=manycore' + config + ' -icv_build -icv_build_args=+libext+.v -icv_build_args=-Mupdate > %s/compilation.log' % rc_dir.log)
         if ret_val != 0:
             print_error("Compilation didn't finish successfully!")
             print_info("See for Errors in %s/compilation.log" % rc_dir.log)

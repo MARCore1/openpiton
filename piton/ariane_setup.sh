@@ -70,7 +70,7 @@ fi
 ################################
 
 # set root directory
-export PITON_ROOT=/home/niansari/Desktop/MARCore/openpiton
+export PITON_ROOT=/home/$USER/Desktop/MARCore/openpiton
 export ARIANE_ROOT=${PITON_ROOT}/piton/design/chip/tile/ariane/
 
 ## GCC and RISCV GCC setup
