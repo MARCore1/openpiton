@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-ROOT=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
+ROOT=${PITON_ROOT}/piton/design/chip/tile/ariane/
 
-cd /home/muheet-ghani/openpiton/piton/design/chip/tile/arian/tmp
+cd /home/$USER/MARCore/openpiton/piton/design/chip/tile/arian/tmp
 
 if [ -z ${NUM_JOBS} ]; then
     NUM_JOBS=1
