@@ -17,7 +17,7 @@
 #
 # Make sure you have the following packages installed:
 #
-# sudo apt install \
+# apt install \
 #          gcc-7 \
 #          g++-7 \
 #          gperf \
@@ -70,8 +70,8 @@ fi
 ################################
 
 # set root directory
-export PITON_ROOT=/home/$USER/Desktop/MARCore/openpiton
-export ARIANE_ROOT=${PITON_ROOT}/piton/design/chip/tile/ariane/
+export PITON_ROOT=/home/niansari/Desktop/MARCore/openpiton
+export ARIANE_ROOT=${PITON_ROOT}/piton/design/chip/tile/ariane
 
 ## GCC and RISCV GCC setup
 export CXX=g++ CC=gcc

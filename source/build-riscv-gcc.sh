@@ -15,7 +15,7 @@ fi
 
 if ! [ -e $RISCV/bin ]; then
 
-    cd /home/$USER/MARCore/riscv-gnu-toolchain
+    cd /home/muheet-ghani/riscv-gnu-toolchain
 
     if [[ $1 -ne "0" || -z ${1} ]]; then
       echo "Compiling RISC-V Toolchain"

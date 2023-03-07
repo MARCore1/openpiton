@@ -60,7 +60,7 @@ endif
 
 
 # define vivado version if it deviates from the default
-#setenv VIVADO_BIN "vivado"
+# setenv VIVADO_BIN "/merledu1/tools/Xilinx/Vivado/2018.2/bin"
 
 # Please define MODELSIM_HOME only if you have MODELSIM, otherwise comment it out.
 
