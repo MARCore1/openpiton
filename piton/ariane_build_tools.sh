@@ -63,9 +63,9 @@ else
   ci/make-tmp.sh
   cd /home/$USER/marcore/openpiton
   #  source /home/$USER/marcore/openpiton/source/build-riscv-gcc.sh
-   source /home/$USER/marcore/openpiton/source/install-fesvr.sh
-   source /home/$USER/marcore/openpiton/source/install-spike.sh
-   source /home/$USER/marcore/openpiton/source/install-verilator.sh
+  #  source /home/$USER/marcore/openpiton/source/install-fesvr.sh
+  #  source /home/$USER/marcore/openpiton/source/install-spike.sh
+  #  source /home/$USER/marcore/openpiton/source/install-verilator.sh
 
   # build the RISCV tests if necessary
   cd /home/$USER/marcore/openpiton/piton/design/chip/tile/ariane/

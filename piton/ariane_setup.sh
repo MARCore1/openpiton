@@ -76,7 +76,7 @@ export ARIANE_ROOT=${PITON_ROOT}/piton/design/chip/tile/ariane
 ## GCC and RISCV GCC setup
 export CXX=g++ CC=gcc
 # customize this to a fast local disk
-export RISCV=/home/$USER/tools/riscv_install
+export RISCV=/home/$USER/tools/riscv64-unknown-elf.gcc-12.1.0
 export VERILATOR_ROOT=$ARIANE_ROOT/tmp/verilator-4.110
 export PATH=$RISCV/bin:$VERILATOR_ROOT/bin:$PATH
 export LIBRARY_PATH=$RISCV/lib
