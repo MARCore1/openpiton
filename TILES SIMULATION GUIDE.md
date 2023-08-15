@@ -13,7 +13,7 @@ sudo apt-get -y autoremove gcc-riscv64-unknown-elf
 
 ![image](https://user-images.githubusercontent.com/81433387/187080350-7b4cba08-0e42-4c1d-a3fe-27eb20181e72.png)
 
-Then Clone riscv-toolchain in /home/$USER. 
+Then Clone riscv-toolchain in /home/$USER.
 ```
 git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
 ```
@@ -31,10 +31,10 @@ Cloning Openpiton repo in /home/$USER
 
 
 ```
-git clone https://github.com/MARCore1/openpiton.git
+git clone https://github.com/marcore1/openpiton.git
 sudo bash
 bash
-cd /home/$USER/MARCore1/openpiton
+cd /home/$USER/marcore1/openpiton
 source piton/arian_setup.sh
 source piton/arian_build_tools.sh
 ```
@@ -52,7 +52,7 @@ sims -sys=manycore -x_tiles=1 -y_tiles=1 -vlt_build -ariane
 ```
 ![image](https://user-images.githubusercontent.com/81433387/187253966-3f2362c7-dea6-4ea5-a55b-f993c0f0e8df.png)
 
-For VCD file pass some flags with commands line in the directory of openpiton showing below. *my_top.vcd* is the dump file in the directory of openpiton. 
+For VCD file pass some flags with commands line in the directory of openpiton showing below. *my_top.vcd* is the dump file in the directory of openpiton.
 ```
 sims -sys=manycore -x_tiles=1 -y_tiles=1 -vlt_build -ariane -vlt_build_args=--trace -vlt_build_args=-CFLAGS -vlt_build_args=-DVERILATOR_VCD
 

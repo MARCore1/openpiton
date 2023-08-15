@@ -60,16 +60,16 @@ fi
 #export LM_LICENSE_FILE=
 
 # define vivado version if it deviates from the default
-#export VIVADO_BIN="vivado"
+export VIVADO_BIN="/home/merledu1/Documents/Xilinx/Vivado/2018.2/bin/vivado"
 
 # Please define MODELSIM_HOME only if you have MODELSIM, otherwise comment it out.
-
+export ICARUS_HOME=/usr
 #export MODELSIM_VERSION="-10.6b -64"
 #export MODELSIM_HOME=
 
 # Please define RIVIERA_HOME only if you have Riviera-PRO, otherwise comment it out.
 
-#export RIVIERA_HOME=
+  #export RIVIERA_HOME=
 
 # New variables (fixed or based on $DV_ROOT)
 
@@ -94,30 +94,30 @@ export PERL_CMD="/usr/bin/perl"
 
 NEWPATH="$DV_ROOT/tools/bin"
 
-if [ ! -z $VCS_HOME ]
-then
-NEWPATH=$NEWPATH:$VCS_HOME/bin
-fi
+# if [ ! -z $VCS_HOME ]
+# then
+# NEWPATH=$NEWPATH:$VCS_HOME/bin
+# fi
 
-if [ ! -z $NCV_HOME ]
-then
-NEWPATH=$NEWPATH:$NCV_HOME/tools.lnx86/bin/64bit
-fi
+# if [ ! -z $NCV_HOME ]
+# then
+# NEWPATH=$NEWPATH:$NCV_HOME/tools.lnx86/bin/64bit
+# fi
 
 if [ ! -z $ICARUS_HOME ]
 then
 NEWPATH=$NEWPATH:$ICARUS_HOME/bin
 fi
 
-if [ ! -z $MODELSIM_HOME ]
-then
-NEWPATH=$NEWPATH:$MODELSIM_HOME/bin
-fi
+# if [ ! -z $MODELSIM_HOME ]
+# then
+# NEWPATH=$NEWPATH:$MODELSIM_HOME/bin
+# fi
 
-if [ ! -z $RIVIERA_HOME ]
-then
-NEWPATH=$NEWPATH:$RIVIERA_HOME/bin
-fi
+# if [ ! -z $RIVIERA_HOME ]
+# then
+# NEWPATH=$NEWPATH:$RIVIERA_HOME/bin
+# fi
 
 if [ ! -z $SYN_BIN ]
 then

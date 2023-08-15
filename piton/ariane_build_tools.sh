@@ -18,7 +18,7 @@
 #
 # Make sure you have the following packages installed:
 #
-# sudo apt install \
+# apt install \
 #          gcc-7 \
 #          g++-7 \
 #          gperf \
@@ -57,18 +57,18 @@ else
   # parallel compilation
   export NUM_JOBS=4
 
-  cd piton/design/chip/tile/ariane/
+  cd /home/$USER/marcore/openpiton/piton/design/chip/tile/ariane/
 
   # not all tools are required at the moment
   ci/make-tmp.sh
-  cd /home/muheet-ghani/openpiton
-   source /home/muheet-ghani/openpiton/source/build-riscv-gcc.sh
-   source /home/muheet-ghani/openpiton/source/install-fesvr.sh
-   source /home/muheet-ghani/openpiton/source/install-spike.sh
-   source /home/muheet-ghani/openpiton/source/install-verilator.sh
+  cd /home/$USER/marcore/openpiton
+  #  source /home/$USER/marcore/openpiton/source/build-riscv-gcc.sh
+  #  source /home/$USER/marcore/openpiton/source/install-fesvr.sh
+  #  source /home/$USER/marcore/openpiton/source/install-spike.sh
+  #  source /home/$USER/marcore/openpiton/source/install-verilator.sh
 
   # build the RISCV tests if necessary
-  cd /home/muheet-ghani/openpiton/piton/design/chip/tile/ariane/
+  cd /home/$USER/marcore/openpiton/piton/design/chip/tile/ariane/
   cd tmp
 
   git clone https://github.com/riscv/riscv-tests.git
